@@ -1,0 +1,12 @@
+# Secrets
+.env
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+# Local data and trained weights
+models/
+results.json
+data/app.json
+*.db

@@ -80,7 +80,7 @@ def train_model(output_dir: str | Path = MODEL_DIR, epochs: int = 8,
         output_dir=str(output_dir), num_train_epochs=epochs, per_device_train_batch_size=4,
         gradient_accumulation_steps=1, learning_rate=5e-5, weight_decay=0.01,
         logging_steps=5, save_strategy="no", report_to="none",
-        fp16=False, use_cpu=True,
+        fp16=False,
     )
     trainer = Trainer(model=model, args=args, train_dataset=dataset,
                       data_collator=DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False))
