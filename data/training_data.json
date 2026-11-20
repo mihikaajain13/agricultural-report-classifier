@@ -1,0 +1,322 @@
+[
+  {
+    "text": "Brown spots are spreading across the tomato leaves and several plants are wilting.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Field observation: brown spots are spreading across the tomato leaves and several plants are wilting.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Small insects are clustered under the cotton leaves and the leaves are curling.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Farmer reports that small insects are clustered under the cotton leaves and the leaves are curling.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "The paddy field has yellow lesions with grey centres on many leaves.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Today we noticed that the paddy field has yellow lesions with grey centres on many leaves.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Aphids are visible on the young shoots and new leaves look distorted.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "During inspection, aphids are visible on the young shoots and new leaves look distorted.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "White powdery patches have appeared on the cucumber leaves.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "The latest farm update says white powdery patches have appeared on the cucumber leaves.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "The maize cobs show damage and caterpillars are present inside the whorls.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Field observation: the maize cobs show damage and caterpillars are present inside the whorls.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Rust coloured pustules are visible on the wheat leaves.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Farmer reports that rust coloured pustules are visible on the wheat leaves.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Fruit borer holes and fresh droppings were noticed on the brinjal fruits.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Today we noticed that fruit borer holes and fresh droppings were noticed on the brinjal fruits.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "The chilli plants have mosaic-like patterns and stunted new growth.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "During inspection, the chilli plants have mosaic-like patterns and stunted new growth.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "Several groundnut plants have leaf spots after a week of humid weather.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "The latest farm update says several groundnut plants have leaf spots after a week of humid weather.",
+    "label": "PEST_DISEASE"
+  },
+  {
+    "text": "The field soil is dry and the crop is drooping; irrigation has not reached this plot.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "Field observation: the field soil is dry and the crop is drooping; irrigation has not reached this plot.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "Water is standing between the rows after the canal was opened for too long.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "Farmer reports that water is standing between the rows after the canal was opened for too long.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "The drip line near the north side is blocked and emitters are not releasing water.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "Today we noticed that the drip line near the north side is blocked and emitters are not releasing water.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "The borewell supply has reduced and the vegetable beds are drying out.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "During inspection, the borewell supply has reduced and the vegetable beds are drying out.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "Heavy rain flooded the lower section of the paddy field.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "The latest farm update says heavy rain flooded the lower section of the paddy field.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "The sprinkler is leaking and water pressure is low in the last rows.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "Field observation: the sprinkler is leaking and water pressure is low in the last rows.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "The soil is waterlogged around the roots after continuous irrigation.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "Farmer reports that the soil is waterlogged around the roots after continuous irrigation.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "There has been no rainfall for three weeks and the young plants need watering.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "Today we noticed that there has been no rainfall for three weeks and the young plants need watering.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "A broken field channel is diverting irrigation water away from the crop.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "During inspection, a broken field channel is diverting irrigation water away from the crop.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "The farm pond is nearly empty and the next irrigation cycle may be delayed.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "The latest farm update says the farm pond is nearly empty and the next irrigation cycle may be delayed.",
+    "label": "WATER_IRRIGATION"
+  },
+  {
+    "text": "Soil test shows low nitrogen and the older leaves are pale green.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "Field observation: soil test shows low nitrogen and the older leaves are pale green.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "The field soil is acidic according to the latest soil test report.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "Farmer reports that the field soil is acidic according to the latest soil test report.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "Plants show yellowing between the veins and the soil test indicates low magnesium.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "Today we noticed that plants show yellowing between the veins and the soil test indicates low magnesium.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "The farmer applied compost before sowing and wants the soil organic matter checked.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "During inspection, the farmer applied compost before sowing and wants the soil organic matter checked.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "Soil samples show low phosphorus in the western section of the farm.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "The latest farm update says soil samples show low phosphorus in the western section of the farm.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "The soil is compacted and seedlings have difficulty developing roots.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "Field observation: the soil is compacted and seedlings have difficulty developing roots.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "The measured soil pH is high and iron deficiency symptoms are visible.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "Farmer reports that the measured soil pH is high and iron deficiency symptoms are visible.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "Potassium levels are below the recommended range in the field report.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "Today we noticed that potassium levels are below the recommended range in the field report.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "The topsoil has become hard and crusted after repeated cultivation.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "During inspection, the topsoil has become hard and crusted after repeated cultivation.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "The soil test recommends adding organic matter to improve soil structure.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "The latest farm update says the soil test recommends adding organic matter to improve soil structure.",
+    "label": "SOIL_NUTRIENT"
+  },
+  {
+    "text": "A strong windstorm has lodged many wheat plants across the field.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "Field observation: a strong windstorm has lodged many wheat plants across the field.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "The crop has suffered heat stress during several days of unusually high temperatures.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "Farmer reports that the crop has suffered heat stress during several days of unusually high temperatures.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "Hail damaged the leaves and flowers in the recently planted orchard.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "Today we noticed that hail damaged the leaves and flowers in the recently planted orchard.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "Frost was observed early this morning and the tender seedlings have blackened edges.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "During inspection, frost was observed early this morning and the tender seedlings have blackened edges.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "A dry hot wind is causing flowers to drop from the cotton plants.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "The latest farm update says a dry hot wind is causing flowers to drop from the cotton plants.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "The field was damaged by a sudden storm with heavy rain and strong winds.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "Field observation: the field was damaged by a sudden storm with heavy rain and strong winds.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "The crop growth has slowed after a prolonged cold spell.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "Farmer reports that the crop growth has slowed after a prolonged cold spell.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "A heat wave has caused sunscald marks on exposed tomato fruits.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "Today we noticed that a heat wave has caused sunscald marks on exposed tomato fruits.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "The field report records drought conditions and cracked soil.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "During inspection, the field report records drought conditions and cracked soil.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "Unseasonal rain during harvest has caused grain to become wet.",
+    "label": "WEATHER_CROP_STRESS"
+  },
+  {
+    "text": "The latest farm update says unseasonal rain during harvest has caused grain to become wet.",
+    "label": "WEATHER_CROP_STRESS"
+  }
+]
