@@ -1,3 +1,4 @@
+[![Built with askThili](https://ask.thili.ai/api/v1/public/projects/3uugm37p9e/badge.svg)](https://ask.thili.ai/b/3uugm37p9e)
 # Agricultural Report Classifier
 
 A command-line project that fine-tunes **GPT-2** to classify short farmer reports into four agricultural categories. It demonstrates special-token extension, causal-language-model fine-tuning with Hugging Face `Trainer`, single-report inference, and batch file processing.
