@@ -130,3 +130,16 @@ def classify_report(report: str, model_dir: str | Path = MODEL_DIR) -> dict[str,
 def milestone_4(report: str):
     return classify_report(report)
 
+
+def classify_file(file_path: str | Path, output_path: str | Path | None = None) -> list[dict]:
+    """Classify non-empty lines in a UTF-8 text file, preserving their order."""
+    source = Path(file_path)
+    reports = [line.strip() for line in source.read_text(encoding="utf-8").splitlines() if line.strip()]
+    results = [classify_report(report) for report in reports]
+    if output_path:
+        Path(output_path).write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
+    return results
+
+
+def milestone_5(file_path: str | Path):
+    return classify_file(file_path)
