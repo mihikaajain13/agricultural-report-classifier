@@ -100,3 +100,33 @@ def train_model(output_dir: str | Path = MODEL_DIR, epochs: int = 8,
 def milestone_3():
     return train_model()
 
+
+def classify_report(report: str, model_dir: str | Path = MODEL_DIR) -> dict[str, str | float]:
+    """Generate a category token from the fine-tuned model for one report."""
+    if not report or not report.strip():
+        raise ValueError("Report text cannot be empty.")
+    model_dir = Path(model_dir)
+    if not (model_dir / "config.json").exists():
+        raise FileNotFoundError("Fine-tuned model not found. Run: python -m app.cli train")
+    import torch
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_dir)
+    model = AutoModelForCausalLM.from_pretrained(model_dir)
+    model.eval()
+    prompt = PROMPT.format(report=report.strip())
+    inputs = tokenizer(prompt, return_tensors="pt")
+    with torch.no_grad():
+        output = model(**inputs)
+        next_logits = output.logits[0, -1, :]
+        token_ids = [tokenizer.convert_tokens_to_ids(f"<|{name}|>") for name in CATEGORIES]
+        category_logits = next_logits[token_ids]
+        probs = torch.softmax(category_logits, dim=0)
+        best = int(torch.argmax(probs).item())
+    label = list(CATEGORIES)[best]
+    return {"report": report.strip(), "category": label,
+            "description": CATEGORIES[label], "confidence": float(probs[best].item())}
+
+
+def milestone_4(report: str):
+    return classify_report(report)
+
