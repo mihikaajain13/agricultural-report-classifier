@@ -68,3 +68,35 @@ class ReportDataset:
     def __getitem__(self, index):
         return self.items[index]
 
+
+def train_model(output_dir: str | Path = MODEL_DIR, epochs: int = 8,
+                model_name: str = BASE_MODEL, examples: list[dict[str, str]] | None = None):
+    """Fine-tune GPT-2 to generate the special token corresponding to each report."""
+    examples = examples if examples is not None else [x for group in milestone_1().values() for x in group]
+    tokenizer, model = prepare_model(model_name)
+    dataset = ReportDataset(examples, tokenizer)
+    from transformers import DataCollatorForLanguageModeling, Trainer, TrainingArguments
+    args = TrainingArguments(
+        output_dir=str(output_dir), num_train_epochs=epochs, per_device_train_batch_size=4,
+        gradient_accumulation_steps=1, learning_rate=5e-5, weight_decay=0.01,
+        logging_steps=5, save_strategy="no", report_to="none",
+        fp16=False, use_cpu=True,
+    )
+    trainer = Trainer(model=model, args=args, train_dataset=dataset,
+                      data_collator=DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False))
+    # DataCollatorForLanguageModeling recreates labels; use the labels prepared above instead.
+    class PreserveLabels:
+        def __call__(self, features):
+            import torch
+            return {key: torch.stack([f[key] for f in features]) for key in features[0]}
+    trainer.data_collator = PreserveLabels()
+    trainer.train()
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+    model.save_pretrained(output_dir)
+    tokenizer.save_pretrained(output_dir)
+    return Path(output_dir)
+
+
+def milestone_3():
+    return train_model()
+
